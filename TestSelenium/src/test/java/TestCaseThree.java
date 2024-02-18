@@ -162,11 +162,7 @@ public class TestCaseThree {
 		// Test on Chrome
 		ChromeOptions optionsChrome = new ChromeOptions();
 		optionsChrome.addArguments("start-maximized"); // open Browser in maximized mode
-		optionsChrome.addArguments("disable-infobars"); // disabling infobars
-		optionsChrome.addArguments("--disable-extensions"); // disabling extensions
-		optionsChrome.addArguments("--disable-gpu"); // applicable to windows os only
-		optionsChrome.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
-		optionsChrome.addArguments("--no-sandbox"); // Bypass OS security model
+		optionsChrome.addArguments("--window-size=1920,1080"); // open Browser in maximized mode
 		optionsChrome.addArguments("--headless");
 		WebDriver driverChrome = new ChromeDriver(optionsChrome);
 		differentBrowsersTest(driverChrome);
