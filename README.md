@@ -18,5 +18,6 @@ __Tips__: All tests will be run both on Chrome and FireFox
 3. Under Source Code Management section, choose git;
 4. Repository URL -> https://github.com/OliverYang0321/selenium.git, Branch Specifier -> */main
 5. Build Steps section, choose "Invoke top-level Maven targets", choose "Maven Version" and Goals -> "clean test"
-6. Post-build Actions section, choose "Publish JUnit test result report", Test report XMLs -> "**/target/surefire-reports/*.xml"
-7. Click "Save" and click "Build now"
+6. Under "Goals" field, click "advanced", enter "TestSelenium/pom.xml" in the "POM" field
+7. Post-build Actions section, choose "Publish JUnit test result report", Test report XMLs -> "**/target/surefire-reports/*.xml"
+8. Click "Save" and click "Build now"
