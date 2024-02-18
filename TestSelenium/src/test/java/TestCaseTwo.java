@@ -67,9 +67,9 @@ public class TestCaseTwo {
 
 		// Test on Chrome
 		ChromeOptions optionsChrome = new ChromeOptions();
-		optionsChrome.addArguments("start-maximized"); // open Browser in maximized mode
+		optionsChrome.addArguments("--start-maximized"); // open Browser in maximized mode
 		optionsChrome.addArguments("--window-size=1920,1080"); // open Browser in maximized mode
-		optionsChrome.addArguments("--headless");
+		optionsChrome.addArguments("--headless=new");
 		WebDriver driverChrome = new ChromeDriver(optionsChrome);
 		differentBrowsersTest(driverChrome);
 	}
