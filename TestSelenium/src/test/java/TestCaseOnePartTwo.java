@@ -87,7 +87,7 @@ public class TestCaseOnePartTwo {
 		ChromeOptions optionsChrome = new ChromeOptions();
 		optionsChrome.addArguments("--start-maximized"); // open Browser in maximized mode
 		optionsChrome.addArguments("--window-size=1920,1080"); // open Browser in maximized mode
-//		optionsChrome.addArguments("--headless=new");
+		optionsChrome.addArguments("--headless=new");
 		WebDriver driverChrome = new ChromeDriver(optionsChrome);
 		differentBrowsersTest(driverChrome);
 	}
@@ -97,7 +97,7 @@ public class TestCaseOnePartTwo {
 
 		// Test on FireFox
 		FirefoxOptions optionsFireFox = new FirefoxOptions();
-//    	optionsFireFox.addArguments("--headless");
+    	optionsFireFox.addArguments("--headless");
 		WebDriver driverFireFox = new FirefoxDriver(optionsFireFox);
 		differentBrowsersTest(driverFireFox);
 
