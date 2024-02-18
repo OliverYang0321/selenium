@@ -50,7 +50,7 @@ public class TestCaseOnePartOne {
 	 * Method differentBrowsersTest runs test on different browsers
 	 */
 	private void differentBrowsersTest(WebDriver driver) {
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 		// Navigate to Url
 		try {
 			driver.get("https://jupiter.cloud.planittesting.com/");
